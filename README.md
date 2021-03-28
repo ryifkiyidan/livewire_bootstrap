@@ -7,6 +7,39 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Installation Fresh
+
+laravel new livewire
+cd livewire
+composer require laravel/jetstream
+php artisan jetstream:install livewire --teams
+composer require nascent-africa/jetstrap --dev
+php artisan jetstrap:swap livewire --teams
+npm install && npm run dev
+
+===== Kalo error di npm install ======
+rm -rf node_modules
+rm package-lock.json yarn.lock
+npm cache clear --force
+npm install
+npm run development
+======================================
+
+php artisan migrate
+php artisan serve
+
+## Installation with this git
+
+<ul>
+<li>Clone the repo and <code>cd</code> into it</li>
+<li>Run <code>composer install</code></li>
+<li>Rename or copy <code>.env.example</code> file to <code>.env</code></li>
+<li>Run <code>php artisan key:generate</code></li>
+<li>Create your database and Set database credentials in your <code>.env</code> file</li>
+<li>Run migration <code>php artisan migrate</code></li>
+<li>Make something awesome!</li>
+</ul>
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
