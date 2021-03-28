@@ -9,24 +9,26 @@
 
 ## Installation Fresh
 
-laravel new livewire
-cd livewire
-composer require laravel/jetstream
-php artisan jetstream:install livewire --teams
-composer require nascent-africa/jetstrap --dev
-php artisan jetstrap:swap livewire --teams
-npm install && npm run dev
+<ul>
+    <li>New Laravel Project <code>laravel new livewire</code> and <code>cd</code> into it</li>
+    <li><code>composer require laravel/jetstream</code></li>
+    <li><code>php artisan jetstream:install livewire --teams</code></li>
+    <li><code>composer require nascent-africa/jetstrap --dev</code></li>
+    <li><code>php artisan jetstrap:swap livewire --teams</code></li>
+    <li><code>npm install && npm run dev</code></li>
+    <li>--------Jika error di <code>npm install</code>--------</li>
+    <li><code>rm -rf node_modules</code></li>
+    <li><code>rm package-lock.json yarn.lock</code></li>
+    <li><code>npm cache clear --force</code></li>
+    <li><code>npm install</code></li>
+    <li><code>npm run development</code></li>
+    <li>------------------------------------------------------</li>
+    <li><code>php artisan migrate</code></li>
+    <li><code>php artisan serve</code></li>
+</ul>
 
-===== Kalo error di npm install ======
-rm -rf node_modules
-rm package-lock.json yarn.lock
-npm cache clear --force
-npm install
-npm run development
-======================================
 
-php artisan migrate
-php artisan serve
+
 
 ## Installation with this git
 
